@@ -1,4 +1,5 @@
 print("como fazer contas" + "\n")
+#\n eh um caracter que representa o fim de uma linha
 
 #concatenar nao eh matematica, mas eh muito importante. Significa colar
 #um texto no outro.
