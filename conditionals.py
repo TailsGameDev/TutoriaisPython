@@ -8,3 +8,12 @@ else: #se nao
     print("i eh maior que 10")
 
 print(i)
+
+verdadeiro = 2 == 2; #igual se escreve com dois iguais. Um igual soh significa "recebe"
+print(str(verdadeiro))
+
+falso = 4 <= 1 # quatro eh menor ou igual que um? Nao!
+print(str(falso))
+
+variavelBooleana = 6*6 == 36
+print("6 * 6 eh 36? " + str(variavelBooleana))
