@@ -7,6 +7,4 @@ elif i < 10: # se nao, mas i eh menor que 10
 else: #se nao
     print("i eh maior que 10")
 
-i = "peixe"
-
 print(i)
