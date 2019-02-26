@@ -17,3 +17,9 @@ print(str(falso))
 
 variavelBooleana = 6*6 == 36
 print("6 * 6 eh 36? " + str(variavelBooleana))
+
+condicoesMultiplas = 6 < 7 and 7 < 8
+print("seis eh menor que sete e sete eh menor que oito? " + condicoesMultiplas)
+
+condicoesMultiplas = 6 < 7 or 1 >= 8
+print("6 eh menor que 7 ou 1 eh maior ou igual a 8? " + condicoesMultiplas)
