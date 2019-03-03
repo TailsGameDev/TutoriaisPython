@@ -15,36 +15,8 @@ Verificar no repositorio o arquivo helloPython, ou algo parecido. E partiu falar
 4:
 Verificar o arquivo sobre matemática.. acho que eh math.py e conversarmos sobre ele
 
-Exercicio 0: implemente o seguinte codigo C# em python
-Para converter explicitamente para string, faça: str(variavel)
-
-
-//Rextester.Program.Main is the entry point for your code. Don't change it.
-//Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-
-namespace Rextester
-{
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            
-            string text = "meutexto";
-            int meuInt = 4;
-            float meuFloat = 3.5f;
-            bool meuBool = true;
-            
-            Console.WriteLine(text + " " + meuInt
-                              + " " + meuFloat + " "
-                             + " " + meuBool);
-        }
-    }
-}
+4.1:
+Fazer exercícios 0, 0.1, 0.2, 0.3, 0.4 e 0.5
 
 5:
 Verificar o arquivo conditionals.py e conversarmos
@@ -57,7 +29,44 @@ Verificar o arquivo loops e conversarmos
 
 8: Exercícios
 
-Exercício 1 (70 de experiência para cada um)
+Exercício 0: implemente o seguinte código C# em Python
+Para converter explicitamente para string, faça: str(variavel)
+
+    string text = "meutexto";
+    int meuInt = 4;
+    float meuFloat = 3.5f;
+    bool meuBool = true;
+
+    Console.WriteLine(text + " " + meuInt
+                      + " " + meuFloat + " "
+                     + " " + meuBool);
+
+Exercício 0.1:
+criar uma variável chamada ataque, e uma chamada defesa. Então imprimir uma
+mensagem informando o dano. Considere o dano igual a ataque menos defesa.
+
+exercício 0.2:
+Imagine que o personagem do "Exercício 0.1" conseguiu um acerto crítico em
+seu ataque. Em caso de acerto crítico, o ataque deve ser multiplicado por uma
+variável chamada crit para o cálculo do dano. Responda com o código informando
+o dano nesse caso de acerto crítico.
+
+exercício 0.3:
+Suponha que um personagem anda 3 metros por turno.
+Faça um programa que calcule quantos metros esse personagem pode andar em
+x turnos, sendo x uma variável.
+
+exercício 0.4:
+Suponha que um personagem está carregando uma espada, um escudo, sua armadura,
+e mais alguns itens que você deve inventar. Faça um programa que some o peso
+e o imprima.
+
+exercício 0.5:
+Imagine que um personagem está carregando x maçãs, sendo que cada maçã tem um
+peso y. Faça um programa que calcule o peso que o personagem está carregando,
+de acordo com x e y, e imprima o resultado.
+
+Exercício 1
 1.0
 Faça um programa que pergunte um número e imprima a resposta dizendo se ele eh positivo, negativo ou nulo.
 
