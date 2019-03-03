@@ -7,7 +7,7 @@ https://github.com/kkaldas/pyStuff
 
 2:
 Acessar o site Rextester e escolher a linguagem Python
-https://rextester.com/
+https://rextester.com/l/python3_online_compiler
 
 3:
 Verificar no repositorio o arquivo helloPython, ou algo parecido. E partiu falar sobre ele
@@ -16,10 +16,13 @@ Verificar no repositorio o arquivo helloPython, ou algo parecido. E partiu falar
 Verificar o arquivo sobre matemática.. acho que eh math.py e conversarmos sobre ele
 
 4.1:
-Fazer exercícios 0, 0.1, 0.2, 0.3, 0.4 e 0.5
+Fazer exercícios 0, 0.1, 0.2, 0.3, 0.4, 0.5 e 0.6
 
 5:
 Verificar o arquivo conditionals.py e conversarmos
+
+5.1:
+Faazer exercícios 0.7 e 0.8
 
 6: (não deu certo no Rextester, então pulamos)
 Verificar o arquivo sobre input e conversarmos
@@ -66,14 +69,130 @@ Imagine que um personagem está carregando x maçãs, sendo que cada maçã tem 
 peso y. Faça um programa que calcule o peso que o personagem está carregando,
 de acordo com x e y, e imprima o resultado.
 
+exercício 0.6:
+complete o código em Python:
+
+ataque1 = "choque do trovao"
+ataque2 = #completar
+ataque3 = #completar
+
+personagem1 = "pikachu"
+personagem2 = #completar
+personagem3 = #completar
+
+fraseAcao1 = " atacou usando "
+fraseAcao2 = #completar
+
+print (personagem1 + fraseAtaque + ataque1)
+#abaixo, exercitar a concatenação imprimindo frases que combinem ataques,
+#personagens e frases de ação.
+print (#completar)
+print (#completar)
+print (#completar)
+print (#completar)
+
+Exercício 0.7:
+modifique os valores das variáveis no script de maneira que ele sempre imprima
+a fase certa e nunca imprima a frase errada. Não faça nenhuma alteração além de
+modificar os valores das variáveis.
+
+yeah = "frase certa"
+nope = "frase errada"
+
+#alterar
+x = 3
+y = 9
+
+if ( x < y ):
+  print(yeah)
+
+#alterar
+x = 9
+y = 9
+
+if ( x <= y ):
+  print(nope)
+else:
+  print(yeah)
+
+x = 7 #alterar
+
+if ( x < 10 ):
+  print(nope)
+elif (x < 11):
+  print(yeah)
+else:
+  print(nope)
+
+exercício 0.8:
+modifique os valores das variáveis no script de maneira que ele sempre imprima
+a fase certa e nunca imprima a frase errada. Não faça nenhuma alteração além de
+modificar os valores das variáveis.
+yeah = "frase certa"
+nope = "frase errada"
+
+x = 1 #alterar
+
+if (x < 27 or x > 27):
+  print(nope)
+else:
+  print(yeah)
+
+x = 13 #alterar
+
+if ( x/42 == 1 and x != "peixe"):
+  print(yeah)
+else:
+  print(nope)
+
+variavelBooleana = False
+
+if (variavelBooleana):
+  print(yeah)
+else:
+  print(nope)
+
+maisUmaVar = True and False
+
+if (variavelBooleana and maisUmaVar):
+  print(yeah)
+else:
+  print(nope)
+
+peixe = 5
+if (2 + 2 == peixe):
+  print(yeah)
+else:
+  print(nope)
+
+quandoTerminarVoceVaiColarSeusCodigosNaSuaPastaDoDrive = "Talvez"
+
+if (quandoTerminarVoceVaiColarSeusCodigosNaSuaPastaDoDrive != "sim!"):
+  print(nope)
+else:
+  print(yeah)
+
 Exercício 1
 1.0
-Faça um programa que pergunte um número e imprima a resposta dizendo se ele eh positivo, negativo ou nulo.
+Crie uma variável chamada num. Faça um programa que, dependendo do valor de num,
+imprima informando se num é um valor negativo, nulo ou positivo.
 
 1.1
-Faça o programa da 1.0, além de se o número é positivo, negativo ou nulo, também se o mesmo número é grande ou pequeno. Grande -> maior que 500 ou menor que -500. Caso esteja entre -500 e 500 é considerado pequeno.
+Faça o programa da 1.0, além de se o número é positivo, negativo ou nulo,
+também se o mesmo número é expressivo ou inexpressivo.
+Expressivo -> maior que 500 ou menor que -500.
+Caso esteja entre -500 e 500 é considerado inexpressivo.
 
-Exercício 2
+Exercício 2.-2
+faça um programa que imprima a frase "ajuda aqui professor" quinhentas mil vezes.
+
+Exercício 2.-1
+Crie uma variável chamada i.
+Faça um programa que imprima a seguinte frase, i vezes:
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
+Exercício 2 (obs: Cainã não recomenda fazer esse exercício no Rextester. Ou seja,
+não precisa fazer por enquanto - 02/03/2019)
 Faça um programa que escreva:
 Era uma vez um gato chinês. Quer que eu conte outra vez?
 Caso o usuário digite sim ou qualquer outra coisa não prevista, imprima de novo a frase do gato. Caso o usuário digite nao, finalize a execução.
@@ -87,8 +206,9 @@ Para o programa imprimir a frase  5 vezes e finalizar a execução
 No Python instalado no PC, o Input pode ser feito em tempo real, daí ficaria um pouco mais divertido o exercício.
 
 
-Exercício 3
-Faça um programa que pede a altura e a largura de um retângulo e imprima sua área. (área = altura * largura)
+Exercício 3 (usar método input)
+Faça um programa que pede a altura e a largura de um retângulo e imprima sua área.
+(área = altura * largura)
 
 Exercício 4
 Faça um programa que pede ao usuário a altura e a largura. Então imprima um retângulo de asteriscos com a altura e a largura digitadas.
@@ -98,9 +218,15 @@ Exemplo para altura 4 e largura 3:
 ***
 ***
 
-Desafio: (70 de XP)
-Exercício 5 (a ideia é fazê-lo na aula do dia 12 de março)
-Faça um programa que recebe por input 2 pontos (x1,y1) e (x2,y2) de um imaginário plano cartesiano, e imprima a sua equação da reta no formato: y = mx + n.
+Exercício 4.1
+Faça um programa que imprima um retângulo nos mesmos princípios do exercício 4,
+no entanto, o retângulo deve ser ôco, não contendo asteriscos no interior. Ou
+seja, deve conter apenas os asteriscos externos, da borda.
+
+Exercício avançado que Cainã não recomenda aos alunos fazerem por enquanto (02/03/2019)
+Exercício 5
+Faça um programa que recebe por input 2 pontos (x1,y1) e (x2,y2) de um imaginário plano cartesiano,
+e imprima a sua equação da reta no formato: y = mx + n.
 m =(y2 – y1) / (x2 – x1)
 n = y1 - m*x1
 Testá-la com algum web app ou usando a matemática mesmo.
