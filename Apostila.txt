@@ -24,7 +24,7 @@ Fazer exercícios 0, 0.1, 0.2, 0.3, 0.4, 0.5 e 0.6
 Verificar o arquivo conditionals.py e conversarmos
 
 5.1:
-Faazer exercícios 0.7 e 0.8
+Faazer exercícios 0.7 e 0.8, 1 e 1.1
 
 6:
 Verificar o arquivo sobre input e conversarmos
@@ -32,8 +32,12 @@ note que quando se usa a função input() no rextester, tem que digitar o
 que foi pedido antes de executar o programa numa text box que tem ali entre o codigo
 e o console. Se não, dá erro.
 
+6.1: Fazer exercício 3
+
 7:
 Verificar o arquivo loops e conversarmos
+
+7.1: Fazer exercícios 2.-2 e 2.-1
 
 8: Exercícios
 
