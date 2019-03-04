@@ -24,8 +24,11 @@ Verificar o arquivo conditionals.py e conversarmos
 5.1:
 Faazer exercícios 0.7 e 0.8
 
-6: (não deu certo no Rextester, então pulamos)
+6:
 Verificar o arquivo sobre input e conversarmos
+note que quando se usa a função input() no rextester, tem que digitar o
+que foi pedido antes de executar o programa numa text box que tem ali entre o codigo
+e o console. Se não, dá erro.
 
 7:
 Verificar o arquivo loops e conversarmos
@@ -52,7 +55,7 @@ exercício 0.2:
 Imagine que o personagem do "Exercício 0.1" conseguiu um acerto crítico em
 seu ataque. Em caso de acerto crítico, o ataque deve ser multiplicado por uma
 variável chamada crit para o cálculo do dano. Responda com o código informando
-o dano nesse caso de acerto crítico.
+o dano nesse caso de acerto crítico. Crit pode valer 2, ou 3, por exemplo.
 
 exercício 0.3:
 Suponha que um personagem anda 3 metros por turno.
@@ -221,7 +224,12 @@ Exemplo para altura 4 e largura 3:
 Exercício 4.1
 Faça um programa que imprima um retângulo nos mesmos princípios do exercício 4,
 no entanto, o retângulo deve ser ôco, não contendo asteriscos no interior. Ou
-seja, deve conter apenas os asteriscos externos, da borda.
+seja, deve conter apenas os asteriscos externos, da borda. Exemplo para altura
+e largura iguais a 4:
+****
+*  *
+*  *
+****
 
 Exercício avançado que Cainã não recomenda aos alunos fazerem por enquanto (02/03/2019)
 Exercício 5
