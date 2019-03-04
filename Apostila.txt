@@ -8,6 +8,8 @@ https://github.com/kkaldas/pyStuff
 2:
 Acessar o site Rextester e escolher a linguagem Python
 https://rextester.com/l/python3_online_compiler
+mas para exercícios com input() sugiro:
+https://repl.it/languages/python3
 
 3:
 Verificar no repositorio o arquivo helloPython, ou algo parecido. E partiu falar sobre ele
@@ -194,8 +196,8 @@ Crie uma variável chamada i.
 Faça um programa que imprima a seguinte frase, i vezes:
 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
-Exercício 2 (obs: Cainã não recomenda fazer esse exercício no Rextester. Ou seja,
-não precisa fazer por enquanto - 02/03/2019)
+Exercício 2 (obs: não faça esse no rextester. faça em
+https://repl.it/languages/python3 - 02/03/2019)
 Faça um programa que escreva:
 Era uma vez um gato chinês. Quer que eu conte outra vez?
 Caso o usuário digite sim ou qualquer outra coisa não prevista, imprima de novo a frase do gato. Caso o usuário digite nao, finalize a execução.
