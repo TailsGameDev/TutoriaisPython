@@ -45,7 +45,7 @@ Verificar o arquivo loops e conversarmos
 
 9: Verificar o arquivo functions.py e conversarmos
 
-9.1: Fazer todos os itens do exercício 6 e conversarmos
+9.1: Fazer todos os itens do exercício 6
 
 Exercícios:
 
@@ -222,7 +222,7 @@ Faça um programa que imprima a seguinte frase, i vezes:
 
 <loops.py> <userInput.py>
 Exercício 2 (obs: não faça esse no rextester. faça em
-https://repl.it/languages/python3 - 02/03/2019)
+https://repl.it/languages/python3 - 02/03/2019, ou no Python instalado no seu PC)
 Faça um programa que pergunte:
 Era uma vez um gato chinês. Quer que eu conte outra vez?
 Caso o usuário digite sim ou qualquer outra coisa não prevista, imprima de novo a frase do gato. Caso o usuário digite nao, finalize a execução.
@@ -254,7 +254,7 @@ e largura iguais a 4:
 
 <vectors.py>
 Exercício 5:
-Criar uma variável chamada inventário que guarda uma lista, ou vetor, com alguns itens do tipo string. Por exemplo "espada",
+Criar uma variável chamada inventario que guarda uma lista, ou vetor, com alguns itens do tipo string. Por exemplo "espada",
 "escudo", "armadura", "laranjas", "morangos". Então imprima a lista toda com um único comando
 
 <vectors.py>
@@ -263,20 +263,31 @@ Use a lista (ou vetor) do exercício 5, mas, ao invés de imprimir o vetor todo,
 
 <vectors.py>
 Exercício 5.2
-Crie uma lista (ou seja, um vetor) com alguns elementos, imprima ele todo com um comando, depois acesse apenas um elemento
-modificando o valor dele, e então imprima novamente toda a lista. (não vale definir todos os elementos de novo, mas com um
-só diferente! Tem que modificar um só, tipo: vetor[2] = "novo valor"
+Reutilize a lista chamada inventario do exercício 5, imprima ela toda com um comando, depois, dê um comando para modificar
+um dos itens por um item melhorado. Por exemplo: substituir "espada" por "espada melhorada de fogo boladona". Então imprima
+novamente toda a lista, e, faça mais uma vez! Ou seja, acesse mais um item da lista (lista[2] = lista[2] + "melhorada boladona")
+e imprima novamente toda a lista.
 
 <vectors.py>
 Exercício 5.3
 Crie uma lista, imprima ela toda em um comando, então modifique seu último elemento usando a função len(nomeDaSuaLista)
-Ela retorna o tamanho da lista, mas para acessar o último elemento, tens que fazer algo como lista[len(lista) -1)
+Ela retorna o tamanho da lista, mas para acessar o último elemento, tens que fazer algo como lista[len(lista) -1)]
 
 <vectors.py> <loops.py>
 Exercício 5.4
 faça uma lista com vários números inteiros, então calcule o produtório deles e imprima o resultado.
 Use um laço de repetição, o while, de maneira que o programa funcione não importando o tamanho da lista
 Produtório significa multiplicar todos os elementos, tipo lista[0] * lista[1] * ... * lista[len(list) -1]
+
+<vectors.py> <loops.py>
+Exercício 5.5:
+Crie uma lista de coisas para um heroi fazer, para o primeiro elemento use: "domar um dragao", depois,
+sugiro coisas como "resgatar uma princesa da torre", "salvar um vilarejo de um ataque de orcs"
+crie uma variável chamada acabeiDeFazer = "domar um dragao"
+Percorra a lista com um while, verificando para cada elemento, se ele é igual à variavel acabeiDeFazer
+Caso seja igual, substitua o elemento no vetor pelo texto: "Ja fiz"
+depois, mude o valor da variável acabeiDeFazer para outra coisa de herói para fazer da lista,
+copie e cole o while depois dessa alteração, de maneira que ele substitua mais uma coisa por "Ja fiz"
 
 <functions.py>
 Exercício 6:
@@ -303,7 +314,6 @@ menor ou igual a zero, ele não repete mais, finalizando a execução do program
 Exercício 6.4
 Crie uma função que receba dois argumentos: nivelPersonagem1 e nivelPersonagem2, e imprima "o personagem 1 tem o maior nivel" ou
 "o personagem 2 tem o maior nivel" dependendo do valor desses argumentos. Caso sejam iguais, imprima: "personagens de mesmo nivel"
-
 
 
 
