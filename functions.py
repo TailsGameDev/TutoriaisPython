@@ -1,27 +1,31 @@
 def helloFunction():
-    print("Hello functions")
+    print("Ola Funcoes")
 
-print("I'm not calling funtion");
+print("Eu nao chamei a funcao ainda");
 
-helloFunction()
+helloFunction() #chamando agora
 
-def canIDeclareHere():
-    print("I am calling function declared in the middle of the code")
+def canIDeclareHere(): #testando declaracao de funcao no meio do arquivo
+    print("se impresso, foi chamada funcao declarada no meio do arquivo")
 
-print("I'm not calling funtion declared in the middle of the code");
+print("Nao chamei a funcao declarada no meio do arquivo ainda");
 
-canIDeclareHere()
+canIDeclareHere() #chamando agora a funcao declarada no meio do arquivo
 
+#funcao que leva um argumento. Argumento eh uma variavel para a funcao usar, que voce envia para ela quando a chama
 def printForMe(string):
     print(string)
 
 printForMe("batata")
 
+#testando opcao de argumento padrao. Nao eh muito importante
 def defaultArg(string = "padraozao"):
     print(string)
 
 defaultArg()
 
+#essa funcao eh capaz de retornar tanto uma string, quanto um numero inteiro, ou um numero real.
+#em C# isso nao seria tao facil
 def IReturnCrazyStuff(i):
     if i<5:
         return "peixe"
