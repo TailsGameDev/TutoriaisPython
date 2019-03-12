@@ -39,7 +39,15 @@ Verificar o arquivo loops e conversarmos
 
 7.1: Fazer exercícios 2.-2 e 2.-1
 
-8: Exercícios
+8: Verificar o arquivo vectors.py e conversarmos
+
+8.1: Fazer todos os itens do exercício 5
+
+9: Verificar o arquivo functions.py e conversarmos
+
+9.1: Fazer todos os itens do exercício 6 e conversarmos
+
+Exercícios:
 
 <math.py>
 Exercício 0: implemente o seguinte código C# em Python
@@ -244,9 +252,64 @@ e largura iguais a 4:
 *  *
 ****
 
+<vectors.py>
+Exercício 5:
+Criar uma variável chamada inventário que guarda uma lista, ou vetor, com alguns itens do tipo string. Por exemplo "espada",
+"escudo", "armadura", "laranjas", "morangos". Então imprima a lista toda com um único comando
+
+<vectors.py>
+Exercício 5.1
+Use a lista (ou vetor) do exercício 5, mas, ao invés de imprimir o vetor todo, imprima apenas o primeiro e o último item
+
+<vectors.py>
+Exercício 5.2
+Crie uma lista (ou seja, um vetor) com alguns elementos, imprima ele todo com um comando, depois acesse apenas um elemento
+modificando o valor dele, e então imprima novamente toda a lista. (não vale definir todos os elementos de novo, mas com um
+só diferente! Tem que modificar um só, tipo: vetor[2] = "novo valor"
+
+<vectors.py>
+Exercício 5.3
+Crie uma lista, imprima ela toda em um comando, então modifique seu último elemento usando a função len(nomeDaSuaLista)
+Ela retorna o tamanho da lista, mas para acessar o último elemento, tens que fazer algo como lista[len(lista) -1)
+
+<vectors.py> <loops.py>
+Exercício 5.4
+faça uma lista com vários números inteiros, então calcule o produtório deles e imprima o resultado.
+Use um laço de repetição, o while, de maneira que o programa funcione não importando o tamanho da lista
+Produtório significa multiplicar todos os elementos, tipo lista[0] * lista[1] * ... * lista[len(list) -1]
+
+<functions.py>
+Exercício 6:
+Crie uma variável ataque = 10, e uma variável defesa = 5, então crie uma função que imprima o dano, seja dano = ataque - defesa.
+E chame a função!
+
+Exercício 6.1:
+Crie uma função similar à do Exercício 6 que, ao invés de imprimir o dano, retorne o dano com o comando return,
+e use o valor retornado para imprimir o dano.
+
+<functions.py>
+Exercício 6.2:
+Crie uma função chamada DobreAMeta que receba um argumento chamado meta, e retorne o seu valor multiplicado por 2.
+chame essa função dentro de um comando print, passando como argumento um numero inteiro. Lembre-se de converter para texto
+com str()
+
+<functions.py> <loops.py>
+Exercício 6.3:
+Crie uma função chamada VerificaSeMorreu, que recebe um argumento chamado vida, e caso vida seja menor ou igual a 0, imprima
+"O personagem morreu". Coloque essa função em dentro de um while que vá tirando um de vida a cada iteração. Daí quando a vida for
+menor ou igual a zero, ele não repete mais, finalizando a execução do programa.
+
+<functions.py> <conditionals.py>
+Exercício 6.4
+Crie uma função que receba dois argumentos: nivelPersonagem1 e nivelPersonagem2, e imprima "o personagem 1 tem o maior nivel" ou
+"o personagem 2 tem o maior nivel" dependendo do valor desses argumentos. Caso sejam iguais, imprima: "personagens de mesmo nivel"
+
+
+
+
 <userInput.py> <math.py>
-Exercício avançado que Cainã não recomenda aos alunos fazerem por enquanto (02/03/2019)
-Exercício 5
+Exercício avançado que Cainã não recomenda aos alunos fazerem
+Exercício 1000
 Faça um programa que recebe por input 2 pontos (x1,y1) e (x2,y2) de um imaginário plano cartesiano,
 e imprima a sua equação da reta no formato: y = mx + n.
 m =(y2 – y1) / (x2 – x1)
