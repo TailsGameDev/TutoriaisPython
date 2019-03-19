@@ -9,7 +9,7 @@ soma = 0
 for x in vector:
    soma = soma + x
 
-print("a soma dos elementos nesse vetor eh "+soma)
+print("a soma dos elementos nesse vetor eh "+str(soma))
 
 vector2 = ["peixe", 3, 0.7, True]
 
