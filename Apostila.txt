@@ -49,7 +49,11 @@ Verificar o arquivo loops e conversarmos
 
 10: Verificarmos o arquivo classes.py e moreClasses.py e conversarmos
 
-10: Fazer todos os itens do exercício 7
+10.1: Fazer todos os itens do exercício 7
+
+11: Verificarmos o arquivo delegates.py e conversarmos
+
+11.1: Fazer todos os itens do exercício 8
 
 Exercícios:
 
@@ -280,7 +284,7 @@ Ela retorna o tamanho da lista, mas para acessar o último elemento, tens que fa
 <vectors.py> <loops.py>
 Exercício 5.4
 faça uma lista com vários números inteiros, então calcule o produtório deles e imprima o resultado.
-Use um laço de repetição, o while, de maneira que o programa funcione não importando o tamanho da lista
+Use um laço de repetição de maneira que o programa funcione não importando o tamanho da lista
 Produtório significa multiplicar todos os elementos, tipo lista[0] * lista[1] * ... * lista[len(list) -1]
 
 <vectors.py> <loops.py>
@@ -288,7 +292,7 @@ Exercício 5.5:
 Crie uma lista de coisas para um heroi fazer, para o primeiro elemento use: "domar um dragao", depois,
 sugiro coisas como "resgatar uma princesa da torre", "salvar um vilarejo de um ataque de orcs"
 crie uma variável chamada acabeiDeFazer = "domar um dragao"
-Percorra a lista com um while, verificando para cada elemento, se ele é igual à variavel acabeiDeFazer
+Percorra a lista com um while ou for, verificando para cada elemento, se ele é igual à variavel acabeiDeFazer
 Caso seja igual, substitua o elemento no vetor pelo texto: "Ja fiz"
 depois, mude o valor da variável acabeiDeFazer para outra coisa de herói para fazer da lista,
 copie e cole o while depois dessa alteração, de maneira que ele substitua mais uma coisa por "Ja fiz"
@@ -360,6 +364,73 @@ MontarNoCavalo() e DesmontarDoCavalo().
 Crie uma lógica para que, quando um cavaleiro esteja montado, o método Andar use a velocidade dele montado, e não a normal.
 Mas quando ele não estiver montado, use a velocidade normal. Não altere a classe Personagem para isso: apenas a Cavaleiro.
 
+<delegates.py><classes.py>
+Exercício 8
+Pensei em escrever para os meus alunos:
+Criem uma classe Personagem, que tenha um atributo strength (força) e um atributo atk (de ataque), que seja um delegate.
+Criem uma classe Arma, que possui um atributo do tipo Personagem, e um atributo atk, que seja usado para substituir
+o atributo atk do personagem quando esse personagem equipa ela. Extendam essa Classe com uma chamada Espada, que dê
+mais atk que a classe Arma, e use um fator aleatório para o cálculo.
+Depois, instanciem um objeto Personagem e um Espada, equipem a espada no personagem, e printem o atk.
+Mas ficou meio complexo, então eu fiz isso tudo, e estou expondo abaixo:
+
+from random import randint
+
+class Arma:
+    def __init__ (self, personagemEquipando = "nenhum"):
+        if (personagemEquipando == "nenhum"):
+            personagemEquipando = Personagem()
+        self.personagem = personagemEquipando
+    def atk(self, personagem):
+        return personagem.strength
+
+class Espada(Arma):
+    def atk(self):
+        return self.personagem.strength + 3 + randint(1,8)
+
+class Clava(Arma):
+    def atk(self):
+        return self.personagem.strength + 5 + randint(1,4)
+
+class Personagem:
+    def __init__ (self, vvida = 10, vstrength = 5, vdefesa = 4):
+        self.vida = vvida
+        self.strength = vstrength
+        desarmado = Arma(self)
+        self.atk = desarmado.atk
+        self.defesa = vdefesa
+
+    def equipar(self, arma):
+        arma.personagem = self;
+        self.atk = arma.atk
+
+cacildo = Personagem(15, 3)
+espada = Espada()
+cacildo.equipar(espada)
+
+print(cacildo.atk())
+
+clava = Clava()
+cacildo.equipar(clava)
+print(cacildo.atk())
+
+Continuando exercício 8...
+Então, vou pedir primeiramente para vocês olharem esse código, testarem, entenderem ele, e então criar mais uma arma, além da
+Espada e da Clava e printarem o dano dela.
+
+<classes.py><delegates.py>
+Exercício 8.1
+Adicionar a seguinte função à classe Personagem, do exercício 8:
+    def atacar(self, atacado):
+        dmg = atacado.defender(self.atk())
+        if (dmg > 0):
+            atacado.vida = atacado.vida - dmg
+Então continuem o código adicionando um sistema de armaduras similar ao sistema usado para as armas, no qual a
+armadura equipada define como será realizada a defesa, e qual será o dano retornado.
+Duas formas requeridas de defesa: 
+sem armadura (daí toma o dano todo), mas tem uma possibilidade de esquivar-se, o que implica em dano zero.
+com escudo mágico: caso o dano inflingido seja menor do que a defesa base do escudo, o ataque cura o atacado ao
+invés de só ser bloqueado.
 
 <userInput.py> <math.py>
 Exercício avançado que Cainã não recomenda aos alunos fazerem
