@@ -5,6 +5,7 @@ print(vector)
 for x in vector:
     print(x)
 
+print("partiu somar")
 soma = 0
 for x in vector:
    soma = soma + x
