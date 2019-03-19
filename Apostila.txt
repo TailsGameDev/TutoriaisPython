@@ -47,6 +47,10 @@ Verificar o arquivo loops e conversarmos
 
 9.1: Fazer todos os itens do exercício 6
 
+10: Verificarmos o arquivo classes.py e conversarmos
+
+10: Fazer todos os itens do exercício 7
+
 Exercícios:
 
 <math.py>
@@ -315,6 +319,17 @@ Exercício 6.4
 Crie uma função que receba dois argumentos: nivelPersonagem1 e nivelPersonagem2, e imprima "o personagem 1 tem o maior nivel" ou
 "o personagem 2 tem o maior nivel" dependendo do valor desses argumentos. Caso sejam iguais, imprima: "personagens de mesmo nivel"
 
+<classes.py>
+Exercício 7.0
+Crie uma classe chamada Guerreiro, com os atributos ataque, defesa e vida.
+Instancie dois guerreiros, um chamado Saitama e um chamado Goku.
+simule um ataque do Saitama no Goku e um ataque do Goku no Saitama, imprimindo a mensagem que informa do ataque,
+e a vida dos personagens antes e depois dos doie eventos.
+Obs: pode personalizar de maneira que você ache que faça sentido a matemática envolvida no ataque.
+
+Exercício 7.1
+transforme a lógica de ataque em um método para a classe Guerreiro, do exercício 7.0. O método deve receber o
+Guerreiro que está sendo atacado como parâmetro (argumento).
 
 
 <userInput.py> <math.py>
