@@ -8,6 +8,7 @@ for x in vector:
 soma = 0
 for x in vector:
    soma = soma + x
+   print(soma)
 
 print("a soma dos elementos nesse vetor eh "+str(soma))
 
