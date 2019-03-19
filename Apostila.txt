@@ -47,7 +47,7 @@ Verificar o arquivo loops e conversarmos
 
 9.1: Fazer todos os itens do exercício 6
 
-10: Verificarmos o arquivo classes.py e conversarmos
+10: Verificarmos o arquivo classes.py e moreClasses.py e conversarmos
 
 10: Fazer todos os itens do exercício 7
 
@@ -275,7 +275,7 @@ e imprima novamente toda a lista.
 <vectors.py>
 Exercício 5.3
 Crie uma lista, imprima ela toda em um comando, então modifique seu último elemento usando a função len(nomeDaSuaLista)
-Ela retorna o tamanho da lista, mas para acessar o último elemento, tens que fazer algo como lista[len(lista) -1)]
+Ela retorna o tamanho da lista, mas para acessar o último elemento, tens que fazer algo como lista[len(lista) -1]
 
 <vectors.py> <loops.py>
 Exercício 5.4
@@ -327,9 +327,38 @@ simule um ataque do Saitama no Goku e um ataque do Goku no Saitama, imprimindo a
 e a vida dos personagens antes e depois dos doie eventos.
 Obs: pode personalizar de maneira que você ache que faça sentido a matemática envolvida no ataque.
 
+<classes.py>
 Exercício 7.1
 transforme a lógica de ataque em um método para a classe Guerreiro, do exercício 7.0. O método deve receber o
 Guerreiro que está sendo atacado como parâmetro (argumento).
+
+<classes.py><loops.py>
+Exercício 7.2
+Crie uma classe chamada Sala, que contém os atributos Descricao, Monstro, Tesouro, salaAcima e salaAbaixo
+Instancie três salas: salaBaixo, salaMeio e salaTopo, e conecte elas através de definir que:
+1- o atributo salaAcima do objeto salaBaixo é a salaMeio
+2- o atributo salaAbaixo da salaMeio é o objeto salaBaixo
+3- o atributo salaAcima do objeto salaMeio é o objeto salaTopo
+4- o atributo salaAbaixo do objeto salaTopo é o objeto salaMeio
+Crie um programa que dá as boas vindas ao jogador, então imprime a descrição, Monstro e Tesouro da salaBaixo, e pergunta
+para o jogador se ele quer ir para "cima", para "baixo" ou se quer "encerrar". Depois de coletar esse input, o programa
+deve gerenciar a movimentação do jogador entre as três salas, para cada sala visitada imprimindo a Descrição, o Monstro e o Tesouro.
+
+<classes.py>
+Exercício 7.3
+Adicione mais uma funcionalidade divertida ao exercício 7.2, mas procure colocar a lógica em métodos de classes.
+Não coloque muita lógica fora das classes. Algo que poderia ser feito seria criar uma classe Personagem, que tem um
+atributo inventario, e adicionar o método ColetaTesouro, que transfere o tesouro da sala para o inventário.
+Daí tem que dar a opção do player fazer isso também né.
+
+<classes.py>
+Exercício 7.4
+Crie uma classe chamada Personagem, que tem os atributos: vida, mana, velocidade, e o método Andar(), que imprime:
+"o personagem andou " + str(velocidade) + " metros."
+Crie uma classe chamada Cavaleiro, que extende Espadachim, e possui o atributo velocidadeMontado, e os métodos:
+MontarNoCavalo() e DesmontarDoCavalo().
+Crie uma lógica para que, quando um cavaleiro esteja montado, o método Andar use a velocidade dele montado, e não a normal.
+Mas quando ele não estiver montado, use a velocidade normal. Não altere a classe Personagem para isso: apenas a Cavaleiro.
 
 
 <userInput.py> <math.py>
