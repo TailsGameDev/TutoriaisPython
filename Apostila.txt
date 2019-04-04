@@ -51,9 +51,12 @@ Verificar o arquivo loops e conversarmos
 
 10.1: Fazer todos os itens do exercício 7
 
+obs: recomendo estudar o item 12 antes do 11 porque considero mais importante.
 11: Verificarmos o arquivo delegates.py e conversarmos
 
 11.1: Fazer todos os itens do exercício 8
+
+12: Verificarmos o arquivo dictionary.py e conversarmos
 
 Exercícios:
 
