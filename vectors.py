@@ -1,13 +1,13 @@
 # definindo vetor, ou lista
-vector = [1,2,4,6,8,9,15]
-print(vector)
+lista = [1,2,4,6,8,9,15]
+print(lista)
 
-for x in vector:
+for x in lista:
     print(x)
 
 print("partiu somar")
 soma = 0
-for x in vector:
+for x in lista:
    soma = soma + x
    print(soma)
 
