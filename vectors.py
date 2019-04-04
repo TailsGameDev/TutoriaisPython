@@ -19,3 +19,20 @@ print(vector2)
 
 for x in vector2:
     print(x)
+
+# acessando elementos de uma lista
+    
+oMelhorEhODaEsquerda = ["APEX", "Free Fire", "PUBG"]
+
+bestLeft = oMelhorEhODaEsquerda
+
+bestLeft.append("Fortnite")
+
+print(bestLeft)
+aux = bestLeft[0]
+
+bestLeft[0] = bestLeft[3]
+print(bestLeft)
+
+bestLeft[3] = bestLeft[0]
+print(bestLeft)
