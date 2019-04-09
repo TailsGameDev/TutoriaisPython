@@ -58,6 +58,8 @@ obs: recomendo estudar o item 12 antes do 11 porque considero mais importante.
 
 12: Verificarmos o arquivo dictionary.py e conversarmos
 
+13: Máquina de Estados. Ainda não upei arquivo sobre isso.
+13.1 Fazer exercício 9
 Exercícios:
 
 <math.py>
@@ -434,6 +436,9 @@ Duas formas requeridas de defesa:
 sem armadura (daí toma o dano todo), mas tem uma possibilidade de esquivar-se, o que implica em dano zero.
 com escudo mágico: caso o dano inflingido seja menor do que a defesa base do escudo, o ataque cura o atacado ao
 invés de só ser bloqueado.
+
+Exercício 9
+Implemente uma máquina de estados simulando um combate. Detalhes da implementação ficam a seu critério.
 
 <userInput.py> <math.py>
 Exercício avançado que Cainã não recomenda aos alunos fazerem
