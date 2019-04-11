@@ -364,7 +364,7 @@ Daí tem que dar a opção do player fazer isso também né.
 Exercício 7.4
 Crie uma classe chamada Personagem, que tem os atributos: vida, mana, velocidade, e o método Andar(), que imprime:
 "o personagem andou " + str(velocidade) + " metros."
-Crie uma classe chamada Cavaleiro, que extende Espadachim, e possui o atributo velocidadeMontado, e os métodos:
+Crie uma classe chamada Cavaleiro, que extende Personagem e possui o atributo velocidadeMontado, e os métodos:
 MontarNoCavalo() e DesmontarDoCavalo().
 Crie uma lógica para que, quando um cavaleiro esteja montado, o método Andar use a velocidade dele montado, e não a normal.
 Mas quando ele não estiver montado, use a velocidade normal. Não altere a classe Personagem para isso: apenas a Cavaleiro.
