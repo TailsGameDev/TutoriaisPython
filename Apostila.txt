@@ -74,6 +74,8 @@ mostra todos os commits que ja foram feitos
 git checkout <codigo do commit>
 git checkout master
 (o git checkout master volta pro estado atual do projeto)
+git pull
+(baixa atualizações do repositório online para o seu PC)
 
 
 Exercícios:
