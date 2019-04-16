@@ -1,0 +1,177 @@
+Git é um software feito por programadores para programadores.
+
+Item 0:
+Motivação.
+O objetivo do Git é controlar a versão dos projetos e também facilitar
+o trabalho em grupo neles.
+Como assim controlar a versão?
+Git, usado corretamente, permite que você volte para cada versão
+que o projeto teve. Então se você quiser voltar atrás em alguma
+mudança feita, isso se torna tranquilo.
+Git possibilita implementar uma mecânica diferente sem ter o
+perigo de bugar o código que já está funcionando e depois se
+descabelar para desbugar ele.
+Também facilita o acesso de uma equipe grande ao projeto e controla
+bem quem fez que alterações, sendo cada alteração reversível.
+
+Item 1:
+Instalação do Git.
+1- acesse o link https://git-scm.com/download/win
+2- baixe o instalador disponível nesse endereço
+3- execute (abra) o instalador baixado
+4- Clicar em Next sempre que puder até terminar a instalação
+5- Clicar em Finish
+6- note que o Git ficou instalado na pasta C:\Program Files\Git
+ou, em português, C:\Arquivos de Programas\Git
+
+Item 2:
+Criar conta no GitHub
+É bem simples. Na página inicial já indica como fazer. Só pede
+usuário, e-mail e senha.
+Sugiro um usuário que pareça com o seu nome, para facilitar sua
+identificação.
+Daí passe o usuário pra mim (Cainã) para que eu possa lhe adicionar
+a uma "Organização" e que você possa colaborar nos projetos, por favor.
+
+Ou usar conta genérica para alunos que criei:
+usuário: alunoscgames
+senha: scgames1234
+
+Item 3: O Git.
+
+3.1 Criar um repositório no GitHub:
+Procurar um botãozinho verde no site, escrito "New" perto de um texto
+"Repositories".
+
+
+
+NAVEGANDO NO TERMINAL ->
+(tem que navegar no terminal até a pasta que estão os arquivos que você
+quer mexer!!)
+
+cd pasta
+-abre a pasta chamada pasta
+
+cd caminho
+-abre a pasta com o caminho especificado
+(Exemplo: cd C:\Users\Caina\Projeto001)
+- isso faria o terminal ir para uma pasta chamada Projeto001, que
+já deveria ter sido criada no caminho especificado.
+
+dir
+-mostra o conteúdo da pasta na qual o terminal está.
+Mas daria pra ver no explorador de arquivos também, bem de boa.
+
+
+Comandos Git:
+
+INICIANDO ->
+
+git config --global user.name "substituir esse texto por seu nome"
+git config --global user.email "substituir esse texto por seu e-mail"
+-diga ao Git quem você é, evitando erros.
+(no mais, quando você tenta fazer push, ele abre uma janelinha pedindo
+seu usuario e senha, da conta do GitHub)
+
+
+
+BAIXANDO MODIFICAÇÕES DO PROJETO ->
+
+git fetch
+-dá uma sincronizada no teu projeto (baixa atualizações sem conflitos)
+
+git pull
+-é um git fetch + um git merge: baixa atualizações e modifica até o que
+tu estiver mexendo, substituindo pelo que estiver online.
+
+
+
+
+FAZENDO ALTERAÇÕES NO PROJETO ->
+git add .
+- adicionar todos os arquivos modificados ao commit:
+
+
+git commit -m "diz aqui o que voce alterou desde o ultimo commit"
+- fazer commit e já digitar o texto que explica o que foi alterado
+
+{
+  git push origin master
+  -enviar sua versão do projeto para a versão suprema do projeto que
+  está online
+  OU
+  git push origin branchComSeuNome
+  -caso você esteja desenvolvendo em uma branch com o seu nome, faz
+  upload das modificações nela.
+}
+
+
+
+CRIANDO BRANCHES ->
+git checkout -b seuNome
+-cria uma branch com o seu nome e muda para ela
+
+git checkout master
+-muda para a versão suprema do projeto no seu computador
+
+
+
+FAZENDO MERGES ->
+é mais fácil fazer pelo site. Mas a ideia é que vocês façam as
+modificações em uma branch com o nome de vocês, e então abram um
+"merge request", também chamado de "pull request", que significa
+pegar a tua branch e fundir com a suprema, a master. E dependendo
+aprovem lá pelo próprio site o merge request, ou peçam para mim (Cainã)
+
+
+
+IMPRIMINDO (VERIFICANDO) VERSÕES DO PROJETO ->
+git log
+-mostra versões de maneira completa
+git log --oneline
+-imprime versões antigas e suas modificações, só que resumidamente
+
+
+
+RESTAURANDO PARA VERSÕES ANTIGAS ->
+1: copie o código daquela versão, obtido com o git log --oneline
+2: git checkout codigoQueVoceAcabouDeCopiarDoGitLog
+( exemplo: git checkout 5264954 )
+3: com esses 2 passos você restaurou a versão, então agora pode
+criar uma branch a partir desse ponto do projeto, ou seja:
+git checkout -b nomeDaBranch
+(exemplo: git checkout -b VersaoRestaurada)
+
+
+Exercícios:
+
+Exercício 1:
+Crie uma pasta para esse exercício no computador
+Clique com o botão direito no fundo branco e escolha
+"Open Git Bash Here"
+Vai precisar logar no github na sequência, daí use a seguinte conta:
+usuário: alunoscgames
+senha: scgames1234
+dê o comando:
+git clone https://github.com/sc-games/someCode
+com isso, espera-se que você baixe esse repositório.
+dê o comando:
+cd someCode
+Isso vai fazer com que o terminal vá para a pasta onde está o repositório
+use o comando:
+dir
+para ver o conteúdo da pasta e perceba que é a mesma informação de
+clicar na pasta no explorador de arquivos e ver o conteúdo dela.
+abra o arquivo OlaGit.txt, e escreva uma mensagem interessante para
+a turma.
+volte para o git bash (terminal) e execute a sequência:
+git add .
+git commit -m "Sou o aluno (coloque seu nome aqui), e deixei minha msg"
+git push origin master
+
+
+Acesse o seguinte repositorio:
+https://github.com/sc-games/someCode
+
+
+Use a conta do GitHub de aluno padrão do SC Games
