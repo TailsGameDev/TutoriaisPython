@@ -88,12 +88,23 @@ git checkout <codigo do commit>
 -> muda todos os seus arquivos pra como estavam na época do commit especificado
 
 git checkout master
-(o git checkout master volta pro estado atual do projeto)
+-> o git checkout master volta pro estado atual do projeto
 
 git pull
-(baixa atualizações do repositório online para o seu PC)
+-> baixa atualizações do repositório online para o seu PC
 
+git checkout -b Caina
+-> cria uma nova branch chamada Caina e muda para ela
 
+git push origin Caina
+-> faz upload da sua branch chamada Caina
+
+git checkout nomeDaBranch
+-> muda para a branch nomeDaBranch
+
+git merge:
+-> 1o passo é ir para a branch que vai receber as mudanças
+-> 2o passo digitar git merge nomeDaOutraBranch (essa outra branch normalmente tem mais features)
 
 Exercícios:
 
