@@ -64,18 +64,35 @@ obs: recomendo estudar o item 12 antes do 11 porque considero mais importante.
 14 Git
 Comandos ensinados (16/04/2019):
 git clone <link do repositorio online>
+-> baixa, pela primeira vez, um repositório online para o seu PC
+
 git add .
+-> adiciona todas as suas mudanças ao próximo commit
+
 git commit -m "escreva aqui as alterações feitas"
+-> faz o commit no seu PC e atrela a descrição entre aspas, que deve
+explicar direitinho o que foi mudado no projeto desde o último commit
+
 git push
+-> envia seus commits para o repositório online
+
 git status
+-> mostra a que passo anda seu projeto
+
 git log
+-> mostra história do projeto
 git log --oneline
-mostra todos os commits que ja foram feitos
+->mostra todos os commits que ja foram feitos, uma linha para cada
+
 git checkout <codigo do commit>
+-> muda todos os seus arquivos pra como estavam na época do commit especificado
+
 git checkout master
 (o git checkout master volta pro estado atual do projeto)
+
 git pull
 (baixa atualizações do repositório online para o seu PC)
+
 
 
 Exercícios:
