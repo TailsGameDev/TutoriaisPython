@@ -1,4 +1,4 @@
-Apostila de Python
+﻿Apostila de Python
 Autor: Cainã
 
 1:
@@ -50,6 +50,12 @@ Verificar o arquivo loops e conversarmos
 10: Verificarmos o arquivo classes.py e moreClasses.py e conversarmos
 
 10.1: Fazer todos os itens do exercício 7
+
+10.2: Completar código na pasta AtividadeAutomatica, seguindo as orientações
+comentadas no arquivo Atividade.py, e então executar o Corretor.py para ver
+se está tudo ok!
+obs: instalei GIT e Python em todos os CPU do projeto ;D  (Cainã 15/05)
+... mas se estiver usando notebook, daí acho que tem que instalar o python ><
 
 obs: recomendo estudar o item 12 antes do 11 porque considero mais importante.
 11: Verificarmos o arquivo delegates.py e conversarmos
