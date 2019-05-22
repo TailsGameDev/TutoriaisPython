@@ -2,9 +2,8 @@ mudar editor de texto padrão para o nano (recomendo a todos):
 git config --global core.editor "nano"
 
 Fazer Git sempre pedir usuário e senha para dar push:
-git config --edit --system
-[ usar o editor de texto nano para remover a linha "helper = manager" ]
 git config --edit --global
+[ usar o editor de texto nano para remover a linha "helper = manager", caso tenha essa linha ]
 [ usar o editor de texto nano para escrever:
         [core]
             askpass =
