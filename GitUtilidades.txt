@@ -9,3 +9,19 @@ git config --edit --global
         [core]
             askpass =
 ]
+
+fazer download do repositório que está no site github:
+vá no repositório, aperte no botão verde "clone or download" e copie o endereço
+vá em uma pasta no computador, botão direito no fundo branco, clique em "Git Bash Here"
+digite: "git clone " e então clique com o botão direito e escolha "colar" ou "paste", ou atalho Shift+Ins
+Deves ficar com algo tipo:
+git clone https://github.com/kkaldas/pyStuff.git
+aí dê enter e o git vai criar uma pastinha com o repositório ali na pasta que você deu o Git Bash Here
+
+baixar atualizações do repositório online:
+git pull
+
+Enviar suas mudanças para o repositório online:
+git add .
+git commit -m "Escreva aqui quais coisas você mudou no projeto"
+git push
